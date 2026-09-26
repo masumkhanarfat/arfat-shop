@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arfat - Fashion House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">ARFAT.</div>
+    <div class="navlinks">
+      <a href="#shop">Sportswear</a>
+      <a href="#shop">Training</a>
+      <a href="#shop">Running</a>
+      <a href="#shop">Accessories</a>
+    </div>
+    <button class="cart-btn" id="cartOpenBtn">Cart <span class="cart-count" id="cartCount">0</span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Built for<br>the rep<br>that counts.</h1>
+      <p>Technical sportswear engineered for movement — breathable fabric, compression fit, zero drag.</p>
+      <a href="#shop" class="hero-cta">See My Dress</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span>Moisture-wick fabric</span><b>92%</b></div>
+      <div class="stat"><span>4-way stretch</span><b>360°</b></div>
+      <div class="stat"><span>WhiteList</span><b>18</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="filters" id="shop">
+  <div class="filters-inner">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="summer">Summer</button>
+    <button class="chip" data-filter="winter">Winter</button>
+    <button class="chip" data-filter="outerwear">Favourite</button>
+    <button class="chip" data-filter="accessories">Accessories</button>
+    <span class="result-count" id="resultCount"></span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<footer>Arfat Fashion House.  ©2026 ARFAT AHMED</footer>
+
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3 style="font-size:16px;">Your cart</h3>
+    <button class="close-x" id="closeCart">&times;</button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="drawer-total"><span>Subtotal</span><span id="subtotal">$0</span></div>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
